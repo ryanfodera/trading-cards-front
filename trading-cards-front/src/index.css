@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-primary: #4f772d;
+  --color-dark-green: #132a13;
+  --color-secondary: #31572c;
+  --color-accent: #ecf39e;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+section {
+  margin: 30px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.loading {
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
+}
+
+/* Header styles START */
+
+header {
+  /* background: var(--color-dark-green); */
+  background: var(--color-primary);
+}
+
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  padding: 20px 5px;
+}
+
+.nav a {
+  color: var(--color-accent);
+}
+
+.navbrand {
+  font-size: 24px;
+  letter-spacing: 8px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+
+.nav a.add-product {
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  display: block;
+  padding: 10px;
+}
+
+@media screen and (max-width: 386px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+/* Header styles END */
+
+/*Homepage styles START*/
+
+.cards-ul {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 10px;
+}
+
+.card {
+  display: block;
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+  box-shadow: -2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card .text-section h3 {
+  font-size: 22px;
+  font-weight: normal;
+  color: var(--color-primary);
+}
+
+.card .text-section p {
+  color: gray;
+  font-size: 15px;
+}
+
+.card .text-section .price {
+  font-size: 28px;
+  margin-top: 10px;
+  color: var(--color-dark-green);
+}
+
+/*Homepage styles END*/
+
+/* ViewProduct styles START */
+
+.view-product {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.view-product .text-section h1 {
+  font-size: 32px;
+  color: var(--color-primary);
+}
+
+.view-product .text-section .price {
+  margin-top: 10px;
+  font-size: 28px;
+}
+
+.view-product .text-section .description {
+  margin-top: 10px;
+}
+
+.view-product .text-section .button-group {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.button-group button {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+}
+
+.button-group a {
+  color: black;
+}
+
+.view-product img {
+  max-width: 400px;
+}
+
+@media (max-width: 768px) {
+  .view-product {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .view-product img {
+    max-width: 100%;
+  }
+
+  .button-group {
+    justify-content: center;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+.view-product .delete-button {
+  background: rgb(223, 65, 65);
+  color: white;
+  border: none;
+}
+
+/* ViewProduct styles END */
+
+/* Create/Edit Product styles START */
+
+form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  border: 1px solid lightgray;
+  box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.formgroup {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.formgroup input,
+.formgroup textarea,
+.formgroup select {
+  border: 1px solid lightgray;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: var(--color-primary);
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Create/Edit Product styles END */
+
